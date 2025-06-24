@@ -1,0 +1,31 @@
+site_name: ARK Wiki
+theme:
+  name: material
+  logo: assets/logo.png
+  favicon: assets/favicon.ico
+extra_css:
+  - assets/extra.css
+plugins:
+  - search
+  - i18n:
+      default_language: fr
+nav:
+  - Accueil: index.md
+  - Créatures:
+      - Terrestres: creatures/terrestres.md
+      - Marines: creatures/marines.md
+      - Volantes: creatures/volantes.md
+      - Boss: creatures/boss.md
+  - Équipement:
+      - Armes: equipement/armes.md
+      - Armures: equipement/armures.md
+      - Outils: equipement/outils.md
+      - Selles: equipement/selles.md
+  - Cartes:
+      - Officielles: cartes/officielles.md
+      - Non‑officielles: cartes/non_officielles.md
+  - Commandes Admin:
+      - Spawn Dino: admin/spawn_dino.md
+      - Spawn Objet: admin/spawn_item.md
+      - Qualité Ascendant: admin/ascendant_quality.md
+  - Building Templates: building_templates.md

@@ -76,3 +76,17 @@
   height: 2.5rem;
   border-radius: 0.3rem;
 }
+/* Fond clair / sombre via bouton */
+body.light-mode {
+  --md-default-background: #ffffff;
+  --md-default-text: #000000;
+}
+body.dark-mode {
+  --md-default-background: #1b1f22;
+  --md-default-text: #e0e0e0;
+}
+
+/* Bouton fond */
+#toggle-theme {
+  margin-top: 1rem;
+}

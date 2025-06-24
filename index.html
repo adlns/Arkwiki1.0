@@ -24,6 +24,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -36,8 +39,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Fira Code"}</style>
       
     
     
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="lime">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -104,6 +114,24 @@
       </div>
     </div>
     
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="lime"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="lime" data-md-color-accent="deep-purple"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
+    
+  
+</form>
+      
+    
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
@@ -133,6 +161,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -173,7 +203,9 @@
 
 
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="ARK Wiki" class="md-nav__button md-logo" aria-label="ARK Wiki" data-md-component="logo">
       
@@ -201,6 +233,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Accueil
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="." class="md-nav__link md-nav__link--active">
         
   
@@ -212,6 +257,43 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#acces-rapide" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Accès rapide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-a-propos" class="md-nav__link">
+    <span class="md-ellipsis">
+      ℹ️ À propos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -725,24 +807,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           
             <div class="md-content" data-md-component="content">
@@ -752,8 +816,42 @@
 
 
 
-<h1 id="ark-wiki">ARK Wiki</h1>
-<p>Bienvenue sur le wiki ARK !</p>
+<!-- Bannière d’accueil -->
+<p><img alt="ARK Banner" src="assets/banner.jpg" /></p>
+<h1 id="ark-wiki">🦖 ARK Wiki</h1>
+<p>Bienvenue sur <strong>le wiki ARK: Survival Evolved</strong> !</p>
+<hr />
+<!-- Bouton de changement de thème clair/foncé -->
+<p><button id="toggle-theme" class="md-button">Changer de fond</button></p>
+<hr />
+<h2 id="acces-rapide">🔍 Accès rapide</h2>
+<div style="display: flex; flex-wrap: wrap; gap: 1rem; margin-top: 1rem;">
+
+<a href="creatures/terrestres.md" class="md-button">🐾 Terrestres</a>
+<a href="creatures/volantes.md" class="md-button">🦅 Volantes</a>
+<a href="creatures/marines.md" class="md-button">🌊 Marines</a>
+<a href="creatures/boss.md" class="md-button">👑 Boss</a>
+
+<a href="equipement/armes.md" class="md-button">⚔️ Armes</a>
+<a href="equipement/armures.md" class="md-button">🛡️ Armures</a>
+<a href="equipement/outils.md" class="md-button">🛠️ Outils</a>
+<a href="equipement/selles.md" class="md-button">🐎 Selles</a>
+
+<a href="cartes/officielles.md" class="md-button">🗺️ Officielles</a>
+<a href="cartes/non_officielles.md" class="md-button">🧭 Non-Officielles</a>
+
+<a href="admin/spawn_dino.md" class="md-button">🎮 Spawn Dino</a>
+<a href="admin/spawn_item.md" class="md-button">📦 Spawn Objet</a>
+<a href="admin/ascendant_quality.md" class="md-button">⭐ Qualité Ascendant</a>
+
+</div>
+
+<hr />
+<h2 id="i-a-propos">ℹ️ À propos</h2>
+<p>Ce wiki est une documentation complète pour <strong>ARK: Survival Evolved</strong>, stylisée avec <strong>MkDocs Material</strong>.</p>
+<blockquote>
+<p>💡 Tu peux contribuer aux fiches ou proposer des améliorations. Bonne survie, Survivant·e !</p>
+</blockquote>
 
 
 
@@ -773,6 +871,12 @@
           
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
         
       </main>
       
@@ -802,7 +906,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.instant", "navigation.tracking", "navigation.top", "toc.integrate", "content.code.copy", "content.action.edit", "search.highlight", "search.suggest"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>

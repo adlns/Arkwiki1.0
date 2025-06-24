@@ -1,2 +1,0 @@
-# Armes
-- Fusil a pompe

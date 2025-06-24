@@ -1,0 +1,32 @@
+<svg width="800" height="150" viewBox="0 0 800 150" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ARK Wiki Banner">
+  <!-- Fond dégradé -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="800" y2="150" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1e1e2f"></stop>
+      <stop offset="100%" stop-color="#121218"></stop>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="3" dy="3" stdDeviation="2" flood-color="#000" flood-opacity="0.7"></feDropShadow>
+    </filter>
+  </defs>
+
+  <rect width="800" height="150" fill="url(#bgGradient)"></rect>
+
+  <!-- Triangle central -->
+  <polygon points="400,20 480,130 320,130" fill="#7a6e5a" stroke="#a8b2ae" stroke-width="5" filter="url(#shadow)"></polygon>
+
+  <!-- Cristaux -->
+  <circle cx="320" cy="140" r="15" fill="#f04e3e" opacity="0.9" filter="url(#shadow)"></circle>
+  <circle cx="400" cy="5" r="18" fill="#3fb7d9" opacity="0.95" filter="url(#shadow)"></circle>
+  <circle cx="480" cy="140" r="15" fill="#c8d76f" opacity="0.9" filter="url(#shadow)"></circle>
+
+  <!-- Texte ARK -->
+  <text x="400" y="110" font-family="Roboto, Arial, sans-serif" font-size="64" fill="#c8d76f" font-weight="900" text-anchor="middle" letter-spacing="22" filter="url(#shadow)">
+    A R K
+  </text>
+
+  <!-- Texte Wiki en dessous -->
+  <text x="400" y="140" font-family="Roboto, Arial, sans-serif" font-size="24" fill="#aaa" font-weight="600" text-anchor="middle" letter-spacing="4">
+    Wiki
+  </text>
+</svg>

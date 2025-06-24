@@ -1,6 +1,69 @@
+/* Typographie globale */
 .md-content {
   font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #eaeaea;
 }
+
+/* Taille du logo dans le header */
 .md-header-nav__title img {
   height: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+/* Mise en valeur des titres */
+.md-typeset h1 {
+  font-size: 2.4rem;
+  border-bottom: 2px solid #5f5fff;
+  padding-bottom: 0.3rem;
+}
+
+.md-typeset h2 {
+  font-size: 1.8rem;
+  color: #5f5fff;
+}
+
+/* Boutons dans les pages */
+.md-button {
+  background-color: #5f5fff;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.md-button:hover {
+  background-color: #3f3fff;
+}
+
+/* Tableau responsive */
+.md-typeset table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.md-typeset th,
+.md-typeset td {
+  padding: 0.5rem;
+  border: 1px solid #444;
+}
+
+/* Lien de retour en haut */
+.scroll-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #5f5fff;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
+.scroll-top.show {
+  display: block;
 }

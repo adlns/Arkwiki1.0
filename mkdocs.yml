@@ -7,8 +7,6 @@ extra_css:
   - assets/extra.css
 plugins:
   - search
-  - i18n:
-      default_language: fr
 nav:
   - Accueil: index.md
   - Créatures:
